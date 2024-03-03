@@ -7,28 +7,29 @@
 # Markus Heiser <markus.heiser@darmarit.de>, 2022.
 # Mateusz Bączek <mateusz.baczek1998@gmail.com>, 2022.
 # ewm <gnu.ewm@protonmail.com>, 2023.
-# return42 <markus.heiser@darmarit.de>, 2023.
+# return42 <markus.heiser@darmarit.de>, 2023, 2024.
 # Eryk Michalak <gnu.ewm@protonmail.com>, 2023.
 # mradalbert <mister.adalbert@gmail.com>, 2023.
 # y0nei <y0nei@proton.me>, 2023.
+# Luna <github@luwuna.gay>, 2023.
+# Linuks <linuks@skiff.com>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: searx\n"
+"Project-Id-Version:  searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-10-05 09:01+0000\n"
-"PO-Revision-Date: 2023-10-10 14:53+0000\n"
+"POT-Creation-Date: 2024-02-25 15:26+0000\n"
+"PO-Revision-Date: 2024-02-15 16:56+0000\n"
 "Last-Translator: return42 <markus.heiser@darmarit.de>\n"
-"Language-Team: Polish <https://translate.codeberg.org/projects/searxng/"
-"searxng/pl/>\n"
 "Language: pl\n"
+"Language-Team: Polish "
+"<https://translate.codeberg.org/projects/searxng/searxng/pl/>\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && ("
-"n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
-"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-"X-Generator: Weblate 5.0.2\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #. CONSTANT_NAMES['NO_SUBGROUPING']
 #: searx/searxng.msg
@@ -63,7 +64,7 @@ msgstr "media społecznościowe"
 #. CATEGORY_NAMES['IMAGES']
 #: searx/searxng.msg
 msgid "images"
-msgstr "zdjęcia"
+msgstr "obrazy"
 
 #. CATEGORY_NAMES['VIDEOS']
 #: searx/searxng.msg
@@ -155,34 +156,44 @@ msgstr "jasny"
 msgid "dark"
 msgstr "ciemny"
 
-#: searx/webapp.py:331
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: searx/searxng.msg
+msgid "Uptime"
+msgstr "czas działania"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: searx/searxng.msg searx/templates/simple/base.html:49
+msgid "About"
+msgstr "Informacje o"
+
+#: searx/webapp.py:332
 msgid "No item found"
 msgstr "Nie znaleziono elementu"
 
-#: searx/engines/qwant.py:280
-#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:333
+#: searx/engines/qwant.py:282
+#: searx/templates/simple/result_templates/images.html:23 searx/webapp.py:334
 msgid "Source"
 msgstr "Źródło"
 
-#: searx/webapp.py:335
+#: searx/webapp.py:336
 msgid "Error loading the next page"
 msgstr "Błąd wczytywania następnej strony"
 
-#: searx/webapp.py:492 searx/webapp.py:888
+#: searx/webapp.py:483 searx/webapp.py:879
 msgid "Invalid settings, please edit your preferences"
 msgstr "Nieprawidłowe ustawienia, zmień swoje preferencje"
 
-#: searx/webapp.py:508
+#: searx/webapp.py:499
 msgid "Invalid settings"
 msgstr "Nieprawidłowe ustawienia"
 
-#: searx/webapp.py:585 searx/webapp.py:667
+#: searx/webapp.py:576 searx/webapp.py:658
 msgid "search error"
 msgstr "błąd wyszukiwania"
 
 #: searx/webutils.py:34
 msgid "timeout"
-msgstr "przekroczenie dozwolonego czasu"
+msgstr "przekroczenie czasu"
 
 #: searx/webutils.py:35
 msgid "parsing error"
@@ -236,11 +247,11 @@ msgstr "błąd serwera API"
 msgid "Suspended"
 msgstr "Zawieszone"
 
-#: searx/webutils.py:317
+#: searx/webutils.py:315
 msgid "{minutes} minute(s) ago"
 msgstr "{minutes} minut(y) temu"
 
-#: searx/webutils.py:318
+#: searx/webutils.py:316
 msgid "{hours} hour(s), {minutes} minute(s) ago"
 msgstr "{hours} godzin(y), {minutes} minut(y) temu"
 
@@ -272,21 +283,21 @@ msgstr "{title} (PRZESTARZAŁY)"
 msgid "This entry has been superseded by"
 msgstr "Ten wpis został zastąpiony przez"
 
-#: searx/engines/qwant.py:282
+#: searx/engines/qwant.py:284
 msgid "Channel"
 msgstr "Kanał"
 
 #: searx/engines/radio_browser.py:104
 msgid "radio"
-msgstr ""
+msgstr "radio"
 
 #: searx/engines/radio_browser.py:106
 msgid "bitrate"
-msgstr ""
+msgstr "bitrate"
 
 #: searx/engines/radio_browser.py:107
 msgid "votes"
-msgstr ""
+msgstr "głosy"
 
 #: searx/engines/radio_browser.py:108
 msgid "clicks"
@@ -296,7 +307,7 @@ msgstr "kliknięcia"
 msgid "Language"
 msgstr "Język"
 
-#: searx/engines/semantic_scholar.py:81
+#: searx/engines/semantic_scholar.py:79
 msgid ""
 "{numCitations} citations from the year {firstCitationVelocityYear} to "
 "{lastCitationVelocityYear}"
@@ -392,7 +403,7 @@ msgstr ""
 
 #: searx/plugins/tor_check.py:25
 msgid "Tor check plugin"
-msgstr "Sprawdzenie plugin TOR"
+msgstr "Sprawdzenie wtyczki TOR"
 
 #: searx/plugins/tor_check.py:28
 msgid ""
@@ -444,10 +455,6 @@ msgstr "Przejdź do %(search_page)s."
 msgid "search page"
 msgstr "strona wyszukiwania"
 
-#: searx/templates/simple/base.html:49
-msgid "About"
-msgstr "Informacje o"
-
 #: searx/templates/simple/base.html:53
 msgid "Donate"
 msgstr "Wpłać"
@@ -466,6 +473,7 @@ msgid "a privacy-respecting, open metasearch engine"
 msgstr "Respektujący prywatność, otwarty metasilnik wyszukiwania"
 
 #: searx/templates/simple/base.html:68
+#: searx/templates/simple/result_templates/packages.html:59
 msgid "Source code"
 msgstr "Kod źródłowy"
 
@@ -498,7 +506,8 @@ msgid "Length"
 msgstr "Długość"
 
 #: searx/templates/simple/macros.html:37
-#: searx/templates/simple/result_templates/images.html:18
+#: searx/templates/simple/result_templates/files.html:34
+#: searx/templates/simple/result_templates/images.html:19
 #: searx/templates/simple/result_templates/paper.html:6
 msgid "Author"
 msgstr "Autor"
@@ -513,7 +522,7 @@ msgstr "przesłane poprzez proxy"
 
 #: searx/templates/simple/new_issue.html:64
 msgid "Start submiting a new issue on GitHub"
-msgstr "Zacznij zgłaszać nowy problemy na GitHub'ie"
+msgstr "Zgłoś nowy problem na GitHubie"
 
 #: searx/templates/simple/new_issue.html:66
 msgid "Please check for existing bugs about this engine on GitHub"
@@ -630,7 +639,7 @@ msgstr "Do góry"
 msgid "Previous page"
 msgstr "poprzednia strona"
 
-#: searx/templates/simple/results.html:140
+#: searx/templates/simple/results.html:141
 msgid "Next page"
 msgstr "następna strona"
 
@@ -716,6 +725,7 @@ msgstr "Odsetek"
 msgid "Parameter"
 msgstr "Parametr"
 
+#: searx/templates/simple/result_templates/files.html:36
 #: searx/templates/simple/stats.html:119
 msgid "Filename"
 msgstr "Nazwa pliku"
@@ -742,7 +752,7 @@ msgstr "Komentarz(e)"
 
 #: searx/templates/simple/elements/apis.html:3
 msgid "Download results"
-msgstr "Ściągnij wyniki"
+msgstr "Pobierz wyniki"
 
 #: searx/templates/simple/elements/engines_msg.html:7
 msgid "Messages from the search engines"
@@ -759,6 +769,16 @@ msgstr "Wyszukiwarki nie mogą pobrać wyników"
 #: searx/templates/simple/elements/search_url.html:3
 msgid "Search URL"
 msgstr "URL wyszukiwania"
+
+#: searx/templates/simple/elements/search_url.html:4
+#: searx/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "Skopiowane"
+
+#: searx/templates/simple/elements/search_url.html:4
+#: searx/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "Kopiuj"
 
 #: searx/templates/simple/elements/suggestions.html:3
 msgid "Suggestions"
@@ -836,29 +856,41 @@ msgstr "Informacja!"
 msgid "currently, there are no cookies defined."
 msgstr "obecnie nie zdefiniowano żadnych ciasteczek."
 
-#: searx/templates/simple/messages/no_results.html:3
+#: searx/templates/simple/messages/no_results.html:6
 msgid "Sorry!"
 msgstr "Przepraszamy!"
 
-#: searx/templates/simple/messages/no_results.html:4
+#: searx/templates/simple/messages/no_results.html:12
 msgid "No results were found. You can try to:"
 msgstr "Nie znaleziono żadnych wyników. Możesz spróbować:"
 
-#: searx/templates/simple/messages/no_results.html:6
+#: searx/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "Nie ma więcej wyników. Możesz spróbować:"
+
+#: searx/templates/simple/messages/no_results.html:19
 msgid "Refresh the page."
 msgstr "Odśwież stronę."
 
-#: searx/templates/simple/messages/no_results.html:7
+#: searx/templates/simple/messages/no_results.html:20
 msgid "Search for another query or select another category (above)."
 msgstr "Wyszukaj innego zapytania albo wybierz inną kategorie (powyżej)."
 
-#: searx/templates/simple/messages/no_results.html:8
+#: searx/templates/simple/messages/no_results.html:21
 msgid "Change the search engine used in the preferences:"
 msgstr "Zmień używaną wyszukiwarkę w ustawieniach:"
 
-#: searx/templates/simple/messages/no_results.html:9
+#: searx/templates/simple/messages/no_results.html:22
 msgid "Switch to another instance:"
 msgstr "Zmień instancję:"
+
+#: searx/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "Wyszukaj inne zapytanie lub wybierz inną kategorię."
+
+#: searx/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "Wróć do poprzedniej strony za pomocą przycisku."
 
 #: searx/templates/simple/preferences/answerers.html:4
 #: searx/templates/simple/preferences/engines.html:17
@@ -870,6 +902,7 @@ msgid "Keywords"
 msgstr "Słowa kluczowe"
 
 #: searx/templates/simple/preferences/answerers.html:6
+#: searx/templates/simple/result_templates/packages.html:7
 msgid "Name"
 msgstr "Nazwa"
 
@@ -942,13 +975,25 @@ msgstr ""
 msgid "URL to restore your preferences in another browser"
 msgstr "URL do przywrócenia twoich ustawień w innej przeglądarce"
 
-#: searx/templates/simple/preferences/cookies.html:44
+#: searx/templates/simple/preferences/cookies.html:43
 msgid ""
 "Specifying custom settings in the preferences URL can be used to sync "
 "preferences across devices."
 msgstr ""
 "Określanie własnych ustawień w adresie URL preferencji może służyć do "
 "synchronizowania preferencji między urządzeniami."
+
+#: searx/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "Skopiuj preferowany hash"
+
+#: searx/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr "Wprowadź skopiowany hash (Bez URL) aby go przywrócić"
+
+#: searx/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "Preferowany Hash"
 
 #: searx/templates/simple/preferences/doi_resolver.html:2
 msgid "Open Access DOI resolver"
@@ -995,8 +1040,8 @@ msgid ""
 "These cookies serve your sole convenience, we don't use these cookies to "
 "track you."
 msgstr ""
-"Te ciasteczka służą wyłącznie Twojej wygodzie, nie używamy tych "
-"ciasteczek do śledzenia Ciebie."
+"Te ciasteczka służą wyłącznie twojej wygodzie, nie używamy ich do "
+"śledzenia."
 
 #: searx/templates/simple/preferences/footer.html:6
 msgid "Save"
@@ -1113,7 +1158,7 @@ msgstr "Styl motywu"
 
 #: searx/templates/simple/preferences/theme.html:31
 msgid "Choose auto to follow your browser settings"
-msgstr "Wybierz auto by używać ustawień twojej przeglądarki"
+msgstr "Wybierz auto by używać ustawień przeglądarki"
 
 #: searx/templates/simple/preferences/tokens.html:2
 msgid "Engine tokens"
@@ -1133,13 +1178,16 @@ msgstr "Zmień język układu"
 
 #: searx/templates/simple/result_templates/code.html:13
 msgid "repo"
-msgstr "repozytoria"
+msgstr "repozytorium"
 
 #: searx/templates/simple/result_templates/default.html:6
+#: searx/templates/simple/result_templates/files.html:8
+#: searx/templates/simple/result_templates/files.html:11
 msgid "show media"
 msgstr "pokaż media"
 
 #: searx/templates/simple/result_templates/default.html:6
+#: searx/templates/simple/result_templates/files.html:8
 msgid "hide media"
 msgstr "ukryj media"
 
@@ -1148,15 +1196,59 @@ msgstr "ukryj media"
 msgid "This site did not provide any description."
 msgstr "Ta strona nie podała żadnego opisu."
 
-#: searx/templates/simple/result_templates/images.html:19
+#: searx/templates/simple/result_templates/files.html:38
+#: searx/templates/simple/result_templates/images.html:22
+#: searx/templates/simple/result_templates/torrent.html:11
+msgid "Filesize"
+msgstr "Rozmiar pliku"
+
+#: searx/templates/simple/result_templates/files.html:39
+#: searx/templates/simple/result_templates/torrent.html:12
+msgid "Bytes"
+msgstr "Bajtów"
+
+#: searx/templates/simple/result_templates/files.html:40
+#: searx/templates/simple/result_templates/torrent.html:13
+msgid "kiB"
+msgstr "KiB"
+
+#: searx/templates/simple/result_templates/files.html:41
+#: searx/templates/simple/result_templates/torrent.html:14
+msgid "MiB"
+msgstr "MiB"
+
+#: searx/templates/simple/result_templates/files.html:42
+#: searx/templates/simple/result_templates/torrent.html:15
+msgid "GiB"
+msgstr "GiB"
+
+#: searx/templates/simple/result_templates/files.html:43
+#: searx/templates/simple/result_templates/torrent.html:16
+msgid "TiB"
+msgstr "TiB"
+
+#: searx/templates/simple/result_templates/files.html:47
+msgid "Date"
+msgstr "Data"
+
+#: searx/templates/simple/result_templates/files.html:49
+#: searx/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "Typ"
+
+#: searx/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr ""
+
+#: searx/templates/simple/result_templates/images.html:21
 msgid "Format"
 msgstr "Format"
 
-#: searx/templates/simple/result_templates/images.html:21
+#: searx/templates/simple/result_templates/images.html:24
 msgid "Engine"
 msgstr "Wyszukiwarka"
 
-#: searx/templates/simple/result_templates/images.html:22
+#: searx/templates/simple/result_templates/images.html:25
 msgid "View source"
 msgstr "Pokaż źródło"
 
@@ -1171,6 +1263,39 @@ msgstr "pokaż mapę"
 #: searx/templates/simple/result_templates/map.html:43
 msgid "hide map"
 msgstr "ukryj mapę"
+
+#: searx/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:30
+#: searx/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Tagi"
+
+#: searx/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr ""
 
 #: searx/templates/simple/result_templates/paper.html:5
 msgid "Published date"
@@ -1187,14 +1312,6 @@ msgstr "Redaktor"
 #: searx/templates/simple/result_templates/paper.html:23
 msgid "Publisher"
 msgstr "Wydawca"
-
-#: searx/templates/simple/result_templates/paper.html:24
-msgid "Type"
-msgstr "Typ"
-
-#: searx/templates/simple/result_templates/paper.html:25
-msgid "Tags"
-msgstr "Tagi"
 
 #: searx/templates/simple/result_templates/paper.html:26
 msgid "DOI"
@@ -1231,30 +1348,6 @@ msgstr "Udostępniający"
 #: searx/templates/simple/result_templates/torrent.html:9
 msgid "Leecher"
 msgstr "Pobierający"
-
-#: searx/templates/simple/result_templates/torrent.html:11
-msgid "Filesize"
-msgstr "Rozmiar pliku"
-
-#: searx/templates/simple/result_templates/torrent.html:12
-msgid "Bytes"
-msgstr "Bajtów"
-
-#: searx/templates/simple/result_templates/torrent.html:13
-msgid "kiB"
-msgstr "KiB"
-
-#: searx/templates/simple/result_templates/torrent.html:14
-msgid "MiB"
-msgstr "MiB"
-
-#: searx/templates/simple/result_templates/torrent.html:15
-msgid "GiB"
-msgstr "GiB"
-
-#: searx/templates/simple/result_templates/torrent.html:16
-msgid "TiB"
-msgstr "TiB"
 
 #: searx/templates/simple/result_templates/torrent.html:20
 msgid "Number of Files"
@@ -1685,3 +1778,4 @@ msgstr "ukryj wideo"
 #~ "nie znaleźliśmy żadnych wyników. Użyj "
 #~ "innego zapytania lub wyszukaj więcej "
 #~ "kategorii."
+

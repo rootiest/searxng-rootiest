@@ -11,13 +11,14 @@
 # Markus Heiser <markus.heiser@darmarit.de>, 2022, 2023.
 # Lakatos Tamás <tomimost@gmail.com>, 2022.
 # return42 <markus.heiser@darmarit.de>, 2023.
+# kratos <makesocialfoss32@keemail.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version:  searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-10-05 09:01+0000\n"
-"PO-Revision-Date: 2023-09-12 14:53+0000\n"
-"Last-Translator: return42 <markus.heiser@darmarit.de>\n"
+"POT-Creation-Date: 2024-02-25 15:26+0000\n"
+"PO-Revision-Date: 2024-02-15 16:56+0000\n"
+"Last-Translator: kratos <makesocialfoss32@keemail.me>\n"
 "Language: hu\n"
 "Language-Team: Hungarian "
 "<https://translate.codeberg.org/projects/searxng/searxng/hu/>\n"
@@ -25,7 +26,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #. CONSTANT_NAMES['NO_SUBGROUPING']
 #: searx/searxng.msg
@@ -152,28 +153,38 @@ msgstr "világos"
 msgid "dark"
 msgstr "sötét"
 
-#: searx/webapp.py:331
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: searx/searxng.msg
+msgid "Uptime"
+msgstr "Üzemidő"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: searx/searxng.msg searx/templates/simple/base.html:49
+msgid "About"
+msgstr "Rólunk"
+
+#: searx/webapp.py:332
 msgid "No item found"
 msgstr "Nincs találat"
 
-#: searx/engines/qwant.py:280
-#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:333
+#: searx/engines/qwant.py:282
+#: searx/templates/simple/result_templates/images.html:23 searx/webapp.py:334
 msgid "Source"
 msgstr "Forrás"
 
-#: searx/webapp.py:335
+#: searx/webapp.py:336
 msgid "Error loading the next page"
 msgstr "Hiba a következő oldal betöltése során"
 
-#: searx/webapp.py:492 searx/webapp.py:888
+#: searx/webapp.py:483 searx/webapp.py:879
 msgid "Invalid settings, please edit your preferences"
 msgstr "Érvénytelen beállítások, kérlek módosítsd őket"
 
-#: searx/webapp.py:508
+#: searx/webapp.py:499
 msgid "Invalid settings"
 msgstr "Érvénytelen beállítások"
 
-#: searx/webapp.py:585 searx/webapp.py:667
+#: searx/webapp.py:576 searx/webapp.py:658
 msgid "search error"
 msgstr "keresési hiba"
 
@@ -233,11 +244,11 @@ msgstr "szerver API hiba"
 msgid "Suspended"
 msgstr "Felfüggesztve"
 
-#: searx/webutils.py:317
+#: searx/webutils.py:315
 msgid "{minutes} minute(s) ago"
 msgstr "{minutes} perce"
 
-#: searx/webutils.py:318
+#: searx/webutils.py:316
 msgid "{hours} hour(s), {minutes} minute(s) ago"
 msgstr "{hours} óra, {minutes} perce"
 
@@ -269,31 +280,31 @@ msgstr "{title} (elavult)"
 msgid "This entry has been superseded by"
 msgstr "Ezt a bejegyzést törölte"
 
-#: searx/engines/qwant.py:282
+#: searx/engines/qwant.py:284
 msgid "Channel"
 msgstr "Csatorna"
 
 #: searx/engines/radio_browser.py:104
 msgid "radio"
-msgstr ""
+msgstr "rádió"
 
 #: searx/engines/radio_browser.py:106
 msgid "bitrate"
-msgstr ""
+msgstr "bitráta"
 
 #: searx/engines/radio_browser.py:107
 msgid "votes"
-msgstr ""
+msgstr "szavazatok"
 
 #: searx/engines/radio_browser.py:108
 msgid "clicks"
-msgstr ""
+msgstr "kattintások"
 
 #: searx/engines/seekr.py:194 searx/engines/zlibrary.py:129
 msgid "Language"
 msgstr "Nyelv"
 
-#: searx/engines/semantic_scholar.py:81
+#: searx/engines/semantic_scholar.py:79
 msgid ""
 "{numCitations} citations from the year {firstCitationVelocityYear} to "
 "{lastCitationVelocityYear}"
@@ -441,10 +452,6 @@ msgstr "Vissza a %(search_page)s-ra/re."
 msgid "search page"
 msgstr "kereső oldal"
 
-#: searx/templates/simple/base.html:49
-msgid "About"
-msgstr "Rólunk"
-
 #: searx/templates/simple/base.html:53
 msgid "Donate"
 msgstr "Támogatás"
@@ -463,6 +470,7 @@ msgid "a privacy-respecting, open metasearch engine"
 msgstr "egy magánéletet tiszteletben tartó, nyílt forráskódú metakereső"
 
 #: searx/templates/simple/base.html:68
+#: searx/templates/simple/result_templates/packages.html:59
 msgid "Source code"
 msgstr "Forráskód"
 
@@ -495,7 +503,8 @@ msgid "Length"
 msgstr "Hossz"
 
 #: searx/templates/simple/macros.html:37
-#: searx/templates/simple/result_templates/images.html:18
+#: searx/templates/simple/result_templates/files.html:34
+#: searx/templates/simple/result_templates/images.html:19
 #: searx/templates/simple/result_templates/paper.html:6
 msgid "Author"
 msgstr "Szerző"
@@ -627,7 +636,7 @@ msgstr "Vissza a lap tetejére"
 msgid "Previous page"
 msgstr "Előző oldal"
 
-#: searx/templates/simple/results.html:140
+#: searx/templates/simple/results.html:141
 msgid "Next page"
 msgstr "Következő oldal"
 
@@ -713,6 +722,7 @@ msgstr "Százalék"
 msgid "Parameter"
 msgstr "Paraméter"
 
+#: searx/templates/simple/result_templates/files.html:36
 #: searx/templates/simple/stats.html:119
 msgid "Filename"
 msgstr "Fájlnév"
@@ -756,6 +766,16 @@ msgstr "Nincs találat a keresőmotortól"
 #: searx/templates/simple/elements/search_url.html:3
 msgid "Search URL"
 msgstr "Keresési URL"
+
+#: searx/templates/simple/elements/search_url.html:4
+#: searx/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "másolt"
+
+#: searx/templates/simple/elements/search_url.html:4
+#: searx/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "másolás"
 
 #: searx/templates/simple/elements/suggestions.html:3
 msgid "Suggestions"
@@ -833,29 +853,41 @@ msgstr "Figyelem!"
 msgid "currently, there are no cookies defined."
 msgstr "jelenleg nincs süti definiálva"
 
-#: searx/templates/simple/messages/no_results.html:3
+#: searx/templates/simple/messages/no_results.html:6
 msgid "Sorry!"
 msgstr "Elnézést!"
 
-#: searx/templates/simple/messages/no_results.html:4
+#: searx/templates/simple/messages/no_results.html:12
 msgid "No results were found. You can try to:"
-msgstr ""
+msgstr "Nincs találat. Megpróbálhatja:"
 
-#: searx/templates/simple/messages/no_results.html:6
+#: searx/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "Nincs több eredmény. Megpróbálhatja:"
+
+#: searx/templates/simple/messages/no_results.html:19
 msgid "Refresh the page."
-msgstr ""
+msgstr "Az oldal frissítése."
 
-#: searx/templates/simple/messages/no_results.html:7
+#: searx/templates/simple/messages/no_results.html:20
 msgid "Search for another query or select another category (above)."
-msgstr ""
+msgstr "Keressen egy másik lekérdezést vagy válasszon másik kategóriát (fent)."
 
-#: searx/templates/simple/messages/no_results.html:8
+#: searx/templates/simple/messages/no_results.html:21
 msgid "Change the search engine used in the preferences:"
-msgstr ""
+msgstr "Módosítsa a beállításokban használt keresőmotort:"
 
-#: searx/templates/simple/messages/no_results.html:9
+#: searx/templates/simple/messages/no_results.html:22
 msgid "Switch to another instance:"
-msgstr ""
+msgstr "Váltás másik példányra:"
+
+#: searx/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "Keressen egy másik lekérdezést vagy válasszon másik kategóriát."
+
+#: searx/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "Az előző oldal gombbal lépjen vissza az előző oldalra."
 
 #: searx/templates/simple/preferences/answerers.html:4
 #: searx/templates/simple/preferences/engines.html:17
@@ -867,6 +899,7 @@ msgid "Keywords"
 msgstr "Kulcsszavak"
 
 #: searx/templates/simple/preferences/answerers.html:6
+#: searx/templates/simple/result_templates/packages.html:7
 msgid "Name"
 msgstr "Név"
 
@@ -938,13 +971,27 @@ msgstr ""
 "Ennek a linknek segítségével átviheted a beállításaidat egy másik "
 "böngészőbe"
 
-#: searx/templates/simple/preferences/cookies.html:44
+#: searx/templates/simple/preferences/cookies.html:43
 msgid ""
 "Specifying custom settings in the preferences URL can be used to sync "
 "preferences across devices."
 msgstr ""
 "Meghatározhatsz egyéni beállításokat a \"beállítások\" linkben, amelyeket"
 " szinkronizálhatsz az eszközeid között."
+
+#: searx/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "Beállítások kivonatainak másolása"
+
+#: searx/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr ""
+"Illessze be a kimásolt beállítások kivonatát (URL nélkül) a "
+"visszaállításhoz"
+
+#: searx/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "Beállítások kivonatai"
 
 #: searx/templates/simple/preferences/doi_resolver.html:2
 msgid "Open Access DOI resolver"
@@ -1006,17 +1053,20 @@ msgstr "Vissza"
 
 #: searx/templates/simple/preferences/hotkeys.html:2
 msgid "Hotkeys"
-msgstr ""
+msgstr "Gyorsbillentyűk"
 
 #: searx/templates/simple/preferences/hotkeys.html:13
 msgid "Vim-like"
-msgstr ""
+msgstr "Vim-szerű"
 
 #: searx/templates/simple/preferences/hotkeys.html:18
 msgid ""
 "Navigate search results with hotkeys (JavaScript required). Press \"h\" "
 "key on main or result page to get help."
 msgstr ""
+"Gyorsbillentyűkkel navigálhat a keresési eredmények között (JavaScript "
+"szükséges). Nyomja meg a \"h\" gombot a fő vagy a találati oldalon a "
+"segítségért."
 
 #: searx/templates/simple/preferences/image_proxy.html:2
 msgid "Image proxy"
@@ -1085,6 +1135,8 @@ msgid ""
 "Perform search immediately if a category selected. Disable to select "
 "multiple categories"
 msgstr ""
+"Azonnal hajtsa végre a keresést, ha egy kategória kiválasztásra kerül. "
+"Több kategória kiválasztásához tiltsa le"
 
 #: searx/templates/simple/preferences/theme.html:2
 msgid "Theme"
@@ -1125,10 +1177,13 @@ msgid "repo"
 msgstr "tárolók"
 
 #: searx/templates/simple/result_templates/default.html:6
+#: searx/templates/simple/result_templates/files.html:8
+#: searx/templates/simple/result_templates/files.html:11
 msgid "show media"
 msgstr "média mutatása"
 
 #: searx/templates/simple/result_templates/default.html:6
+#: searx/templates/simple/result_templates/files.html:8
 msgid "hide media"
 msgstr "média elrejtése"
 
@@ -1137,15 +1192,59 @@ msgstr "média elrejtése"
 msgid "This site did not provide any description."
 msgstr "Ennek a weblapnak nincsen leírása."
 
-#: searx/templates/simple/result_templates/images.html:19
+#: searx/templates/simple/result_templates/files.html:38
+#: searx/templates/simple/result_templates/images.html:22
+#: searx/templates/simple/result_templates/torrent.html:11
+msgid "Filesize"
+msgstr "Fájl méret"
+
+#: searx/templates/simple/result_templates/files.html:39
+#: searx/templates/simple/result_templates/torrent.html:12
+msgid "Bytes"
+msgstr "Byte"
+
+#: searx/templates/simple/result_templates/files.html:40
+#: searx/templates/simple/result_templates/torrent.html:13
+msgid "kiB"
+msgstr "kiB"
+
+#: searx/templates/simple/result_templates/files.html:41
+#: searx/templates/simple/result_templates/torrent.html:14
+msgid "MiB"
+msgstr "MiB"
+
+#: searx/templates/simple/result_templates/files.html:42
+#: searx/templates/simple/result_templates/torrent.html:15
+msgid "GiB"
+msgstr "GiB"
+
+#: searx/templates/simple/result_templates/files.html:43
+#: searx/templates/simple/result_templates/torrent.html:16
+msgid "TiB"
+msgstr "TiB"
+
+#: searx/templates/simple/result_templates/files.html:47
+msgid "Date"
+msgstr "Dátum"
+
+#: searx/templates/simple/result_templates/files.html:49
+#: searx/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "Típus"
+
+#: searx/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr ""
+
+#: searx/templates/simple/result_templates/images.html:21
 msgid "Format"
 msgstr "Formátum"
 
-#: searx/templates/simple/result_templates/images.html:21
+#: searx/templates/simple/result_templates/images.html:24
 msgid "Engine"
 msgstr "Motor"
 
-#: searx/templates/simple/result_templates/images.html:22
+#: searx/templates/simple/result_templates/images.html:25
 msgid "View source"
 msgstr "Forrás megtekintése"
 
@@ -1160,6 +1259,39 @@ msgstr "térkép megjelenítése"
 #: searx/templates/simple/result_templates/map.html:43
 msgid "hide map"
 msgstr "térkép elrejtése"
+
+#: searx/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:30
+#: searx/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Címkék"
+
+#: searx/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr ""
 
 #: searx/templates/simple/result_templates/paper.html:5
 msgid "Published date"
@@ -1176,14 +1308,6 @@ msgstr "Szerkesztő"
 #: searx/templates/simple/result_templates/paper.html:23
 msgid "Publisher"
 msgstr "Kiadó"
-
-#: searx/templates/simple/result_templates/paper.html:24
-msgid "Type"
-msgstr "Típus"
-
-#: searx/templates/simple/result_templates/paper.html:25
-msgid "Tags"
-msgstr "Címkék"
 
 #: searx/templates/simple/result_templates/paper.html:26
 msgid "DOI"
@@ -1220,30 +1344,6 @@ msgstr "Seeder"
 #: searx/templates/simple/result_templates/torrent.html:9
 msgid "Leecher"
 msgstr "Leecher"
-
-#: searx/templates/simple/result_templates/torrent.html:11
-msgid "Filesize"
-msgstr "Fájl méret"
-
-#: searx/templates/simple/result_templates/torrent.html:12
-msgid "Bytes"
-msgstr "Byte"
-
-#: searx/templates/simple/result_templates/torrent.html:13
-msgid "kiB"
-msgstr "kiB"
-
-#: searx/templates/simple/result_templates/torrent.html:14
-msgid "MiB"
-msgstr "MiB"
-
-#: searx/templates/simple/result_templates/torrent.html:15
-msgid "GiB"
-msgstr "GiB"
-
-#: searx/templates/simple/result_templates/torrent.html:16
-msgid "TiB"
-msgstr "TiB"
 
 #: searx/templates/simple/result_templates/torrent.html:20
 msgid "Number of Files"

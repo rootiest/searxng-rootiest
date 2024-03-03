@@ -18,17 +18,21 @@
 # a <a@daimashili.com>, 2022.
 # YaoSiQian <2229561981@qq.com>, 2022.
 # yfdyh000 <yfdyh000@gmail.com>, 2023.
-# return42 <markus.heiser@darmarit.de>, 2023.
+# return42 <markus.heiser@darmarit.de>, 2023, 2024.
 # BBTranslate <357835338@qq.com>, 2023.
 # JonesBBQ <colson.xu@gmail.com>, 2023.
 # BernieHuang2008 <berniehuang2008@163.com>, 2023.
+# clsty <celestial.y@outlook.com>, 2023.
+# kirisameSoup <kirisoup@skiff.com>, 2023.
+# err_connection_closed
+# <err_connection_closed@users.noreply.translate.codeberg.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version:  searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-10-05 09:01+0000\n"
-"PO-Revision-Date: 2023-09-29 07:07+0000\n"
-"Last-Translator: BernieHuang2008 <berniehuang2008@163.com>\n"
+"POT-Creation-Date: 2024-02-25 15:26+0000\n"
+"PO-Revision-Date: 2024-02-15 16:56+0000\n"
+"Last-Translator: return42 <markus.heiser@darmarit.de>\n"
 "Language: zh_Hans_CN\n"
 "Language-Team: Chinese (Simplified) "
 "<https://translate.codeberg.org/projects/searxng/searxng/zh_Hans/>\n"
@@ -36,7 +40,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #. CONSTANT_NAMES['NO_SUBGROUPING']
 #: searx/searxng.msg
@@ -56,7 +60,7 @@ msgstr "文件"
 #. CATEGORY_NAMES['GENERAL']
 #: searx/searxng.msg
 msgid "general"
-msgstr "常规"
+msgstr "综合"
 
 #. CATEGORY_NAMES['MUSIC']
 #: searx/searxng.msg
@@ -126,7 +130,7 @@ msgstr "程序包"
 #. CATEGORY_GROUPS['Q_A']
 #: searx/searxng.msg
 msgid "q&a"
-msgstr "问&答"
+msgstr "问答"
 
 #. CATEGORY_GROUPS['REPOS']
 #: searx/searxng.msg
@@ -163,28 +167,38 @@ msgstr "浅色"
 msgid "dark"
 msgstr "暗色"
 
-#: searx/webapp.py:331
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: searx/searxng.msg
+msgid "Uptime"
+msgstr "运行时间"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: searx/searxng.msg searx/templates/simple/base.html:49
+msgid "About"
+msgstr "关于"
+
+#: searx/webapp.py:332
 msgid "No item found"
 msgstr "未找到项目"
 
-#: searx/engines/qwant.py:280
-#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:333
+#: searx/engines/qwant.py:282
+#: searx/templates/simple/result_templates/images.html:23 searx/webapp.py:334
 msgid "Source"
 msgstr "来源"
 
-#: searx/webapp.py:335
+#: searx/webapp.py:336
 msgid "Error loading the next page"
 msgstr "载入下个页面时发生错误"
 
-#: searx/webapp.py:492 searx/webapp.py:888
+#: searx/webapp.py:483 searx/webapp.py:879
 msgid "Invalid settings, please edit your preferences"
 msgstr "无效设置，请编辑您的首选项"
 
-#: searx/webapp.py:508
+#: searx/webapp.py:499
 msgid "Invalid settings"
 msgstr "无效设置"
 
-#: searx/webapp.py:585 searx/webapp.py:667
+#: searx/webapp.py:576 searx/webapp.py:658
 msgid "search error"
 msgstr "搜索错误"
 
@@ -206,7 +220,7 @@ msgstr "网络错误"
 
 #: searx/webutils.py:38
 msgid "SSL error: certificate validation has failed"
-msgstr "SSL错误：证书校验失败"
+msgstr "SSL 错误：证书校验失败"
 
 #: searx/webutils.py:40
 msgid "unexpected crash"
@@ -230,7 +244,7 @@ msgstr "验证码"
 
 #: searx/webutils.py:56
 msgid "too many requests"
-msgstr "频繁请求"
+msgstr "请求过于频繁"
 
 #: searx/webutils.py:57
 msgid "access denied"
@@ -244,11 +258,11 @@ msgstr "服务器 API 错误"
 msgid "Suspended"
 msgstr "暂停服务"
 
-#: searx/webutils.py:317
+#: searx/webutils.py:315
 msgid "{minutes} minute(s) ago"
 msgstr "{minutes} 分钟前"
 
-#: searx/webutils.py:318
+#: searx/webutils.py:316
 msgid "{hours} hour(s), {minutes} minute(s) ago"
 msgstr "{hours} 小时 {minutes} 分钟前"
 
@@ -274,54 +288,56 @@ msgstr "获取路线"
 
 #: searx/engines/pdbe.py:96
 msgid "{title} (OBSOLETE)"
-msgstr "{title} (已过时)"
+msgstr "{title} （已过时）"
 
 #: searx/engines/pdbe.py:103
 msgid "This entry has been superseded by"
 msgstr "此条目已被以下内容取代"
 
-#: searx/engines/qwant.py:282
+#: searx/engines/qwant.py:284
 msgid "Channel"
 msgstr "频道"
 
 #: searx/engines/radio_browser.py:104
 msgid "radio"
-msgstr ""
+msgstr "电台"
 
 #: searx/engines/radio_browser.py:106
 msgid "bitrate"
-msgstr ""
+msgstr "比特率"
 
 #: searx/engines/radio_browser.py:107
 msgid "votes"
-msgstr ""
+msgstr "投票数"
 
 #: searx/engines/radio_browser.py:108
 msgid "clicks"
-msgstr ""
+msgstr "点击数"
 
 #: searx/engines/seekr.py:194 searx/engines/zlibrary.py:129
 msgid "Language"
 msgstr "语言"
 
-#: searx/engines/semantic_scholar.py:81
+#: searx/engines/semantic_scholar.py:79
 msgid ""
 "{numCitations} citations from the year {firstCitationVelocityYear} to "
 "{lastCitationVelocityYear}"
-msgstr "{numCitations}次引用，从{firstCitationVelocityYear}年到{lastCitationVelocityYear}年"
+msgstr ""
+"{firstCitationVelocityYear} 年至 {lastCitationVelocityYear} 年间总计 "
+"{numCitations} 次引用"
 
 #: searx/engines/tineye.py:40
 msgid ""
 "Could not read that image url. This may be due to an unsupported file "
 "format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
 " WebP."
-msgstr "无法读取该图片网址。这可能是由于文件格式不受支持。 TinEye 仅支持 JPEG、PNG、GIF、BMP、TIFF 或 WebP 格式的图像。"
+msgstr "无法读取该图片网址。这可能是由于文件格式不受支持。TinEye 仅支持 JPEG、PNG、GIF、BMP、TIFF 或 WebP 格式的图像。"
 
 #: searx/engines/tineye.py:46
 msgid ""
 "The image is too simple to find matches. TinEye requires a basic level of"
 " visual detail to successfully identify matches."
-msgstr "图像过于简单，无法找到匹配项。 TinEye 需要基本级别的视觉细节才能成功识别匹配项。"
+msgstr "图像过于简单，无法找到匹配项。TinEye 需要基本级别的视觉细节才能成功识别匹配项。"
 
 #: searx/engines/tineye.py:52
 msgid "The image could not be downloaded."
@@ -329,7 +345,7 @@ msgstr "无法下载该图像。"
 
 #: searx/engines/wttr.py:101
 msgid "Morning"
-msgstr "早上"
+msgstr "上午"
 
 #: searx/engines/wttr.py:101
 msgid "Noon"
@@ -353,7 +369,7 @@ msgstr "文件质量"
 
 #: searx/plugins/hash_plugin.py:24
 msgid "Converts strings to different hash digests."
-msgstr "将字符串转换为不同的散列摘要值。"
+msgstr "将字符串转换为不同的散列（hash）摘要值。"
 
 #: searx/plugins/hash_plugin.py:52
 msgid "hash digest"
@@ -395,27 +411,27 @@ msgstr "Tor 网络检测插件"
 msgid ""
 "This plugin checks if the address of the request is a Tor exit-node, and "
 "informs the user if it is; like check.torproject.org, but from SearXNG."
-msgstr "此插件检查地址是否为 Tor 出口节点并给出结果，是由 SearXNG 提供的类似 check.torproject.org 的服务。"
+msgstr "此插件检查请求地址是否为 Tor 出口节点，若是则告知用户。这是由 SearXNG 提供的类似 check.torproject.org 的服务。"
 
 #: searx/plugins/tor_check.py:62
 msgid ""
 "Could not download the list of Tor exit-nodes from: "
 "https://check.torproject.org/exit-addresses"
-msgstr "未能从如下地址下载 Tor 出口节点的名单: https://check.torproject.org/exit-addresses"
+msgstr "未能从此地址下载 Tor 出口节点的列表： https://check.torproject.org/exit-addresses"
 
 #: searx/plugins/tor_check.py:78
 msgid ""
 "You are using Tor and it looks like you have this external IP address: "
 "{ip_address}"
-msgstr "您似乎在使用 Tor，您的外部 IP 地址为: {ip_address}"
+msgstr "您似乎在使用 Tor，您的外部 IP 地址为： {ip_address}"
 
 #: searx/plugins/tor_check.py:86
 msgid "You are not using Tor and you have this external IP address: {ip_address}"
-msgstr "您并未使用 Tor，您的外部 IP 地址为: {ip_address}"
+msgstr "您并未使用 Tor，您的外部 IP 地址为： {ip_address}"
 
 #: searx/plugins/tracker_url_remover.py:29
 msgid "Tracker URL remover"
-msgstr "移除跟踪链接"
+msgstr "跟踪链接移除器"
 
 #: searx/plugins/tracker_url_remover.py:30
 msgid "Remove trackers arguments from the returned URL"
@@ -433,10 +449,6 @@ msgstr "前往 %(search_page)s。"
 #: searx/templates/simple/404.html:6
 msgid "search page"
 msgstr "搜索页面"
-
-#: searx/templates/simple/base.html:49
-msgid "About"
-msgstr "关于"
 
 #: searx/templates/simple/base.html:53
 msgid "Donate"
@@ -456,6 +468,7 @@ msgid "a privacy-respecting, open metasearch engine"
 msgstr "尊重隐私的开源元搜索引擎"
 
 #: searx/templates/simple/base.html:68
+#: searx/templates/simple/result_templates/packages.html:59
 msgid "Source code"
 msgstr "源代码"
 
@@ -488,7 +501,8 @@ msgid "Length"
 msgstr "长度"
 
 #: searx/templates/simple/macros.html:37
-#: searx/templates/simple/result_templates/images.html:18
+#: searx/templates/simple/result_templates/files.html:34
+#: searx/templates/simple/result_templates/images.html:19
 #: searx/templates/simple/result_templates/paper.html:6
 msgid "Author"
 msgstr "作者"
@@ -515,7 +529,7 @@ msgstr "我确定提交的 Bug 没有与现存 Issue 重复"
 
 #: searx/templates/simple/new_issue.html:71
 msgid "If this is a public instance, please specify the URL in the bug report"
-msgstr "如果这是一个公共问题，请在 Bug 报告页面提交 URL"
+msgstr "如果这是一个公共实例，请在 Bug 报告中指明其网址"
 
 #: searx/templates/simple/new_issue.html:72
 msgid "Submit a new issue on Github including the above information"
@@ -618,7 +632,7 @@ msgstr "返回顶部"
 msgid "Previous page"
 msgstr "上一页"
 
-#: searx/templates/simple/results.html:140
+#: searx/templates/simple/results.html:141
 msgid "Next page"
 msgstr "下一页"
 
@@ -704,6 +718,7 @@ msgstr "百分比"
 msgid "Parameter"
 msgstr "参数"
 
+#: searx/templates/simple/result_templates/files.html:36
 #: searx/templates/simple/stats.html:119
 msgid "Filename"
 msgstr "文件名"
@@ -747,6 +762,16 @@ msgstr "引擎无法检索到结果"
 #: searx/templates/simple/elements/search_url.html:3
 msgid "Search URL"
 msgstr "搜索网址"
+
+#: searx/templates/simple/elements/search_url.html:4
+#: searx/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "已复制"
+
+#: searx/templates/simple/elements/search_url.html:4
+#: searx/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "复制"
 
 #: searx/templates/simple/elements/suggestions.html:3
 msgid "Suggestions"
@@ -824,29 +849,41 @@ msgstr "信息！"
 msgid "currently, there are no cookies defined."
 msgstr "目前还没有在 Cookie 中存储任何信息。"
 
-#: searx/templates/simple/messages/no_results.html:3
+#: searx/templates/simple/messages/no_results.html:6
 msgid "Sorry!"
 msgstr "抱歉！"
 
-#: searx/templates/simple/messages/no_results.html:4
+#: searx/templates/simple/messages/no_results.html:12
 msgid "No results were found. You can try to:"
 msgstr "未找到结果，你可以尝试："
 
-#: searx/templates/simple/messages/no_results.html:6
+#: searx/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "没有更多结果。你可以尝试："
+
+#: searx/templates/simple/messages/no_results.html:19
 msgid "Refresh the page."
-msgstr "刷新页面"
+msgstr "刷新页面。"
 
-#: searx/templates/simple/messages/no_results.html:7
+#: searx/templates/simple/messages/no_results.html:20
 msgid "Search for another query or select another category (above)."
-msgstr ""
+msgstr "（在上方）对其他查询进行搜索，或选择其他类别。"
 
-#: searx/templates/simple/messages/no_results.html:8
+#: searx/templates/simple/messages/no_results.html:21
 msgid "Change the search engine used in the preferences:"
 msgstr "更改“首选项”中使用的搜索引擎："
 
-#: searx/templates/simple/messages/no_results.html:9
+#: searx/templates/simple/messages/no_results.html:22
 msgid "Switch to another instance:"
-msgstr "切换另一个SearXNG的服务器："
+msgstr "切换至另一个 SearXNG 实例："
+
+#: searx/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "对其他查询进行搜索，或选择其他类别。"
+
+#: searx/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "使用返回按钮按钮返回上一页。"
 
 #: searx/templates/simple/preferences/answerers.html:4
 #: searx/templates/simple/preferences/engines.html:17
@@ -858,6 +895,7 @@ msgid "Keywords"
 msgstr "关键词"
 
 #: searx/templates/simple/preferences/answerers.html:6
+#: searx/templates/simple/result_templates/packages.html:7
 msgid "Name"
 msgstr "名称"
 
@@ -927,11 +965,23 @@ msgstr ""
 msgid "URL to restore your preferences in another browser"
 msgstr "用于在其他浏览器上还原您的偏好设置的 URL"
 
-#: searx/templates/simple/preferences/cookies.html:44
+#: searx/templates/simple/preferences/cookies.html:43
 msgid ""
 "Specifying custom settings in the preferences URL can be used to sync "
 "preferences across devices."
 msgstr "在首选项 URL 中指定可跨设备同步的偏好设置。"
+
+#: searx/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "复制配置哈希值"
+
+#: searx/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr "插入复制的（不带URL）首选项哈希，以恢复"
+
+#: searx/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr ""
 
 #: searx/templates/simple/preferences/doi_resolver.html:2
 msgid "Open Access DOI resolver"
@@ -945,7 +995,7 @@ msgstr "选择 DOI 重写使用的服务"
 msgid ""
 "This tab does not exists in the user interface, but you can search in "
 "these engines by its !bangs."
-msgstr "这个标签页在用户界面中不存在，但你可以用 !bang 对这些引擎进行搜索。"
+msgstr "这个标签页在用户界面中不存在，但你可以使用 !bang 对这些引擎进行搜索。"
 
 #: searx/templates/simple/preferences/engines.html:19
 msgid "!bang"
@@ -993,13 +1043,13 @@ msgstr "热键"
 
 #: searx/templates/simple/preferences/hotkeys.html:13
 msgid "Vim-like"
-msgstr "Vim布局"
+msgstr "Vim 布局"
 
 #: searx/templates/simple/preferences/hotkeys.html:18
 msgid ""
 "Navigate search results with hotkeys (JavaScript required). Press \"h\" "
 "key on main or result page to get help."
-msgstr "使用热键进行导航（需要JavaScript）。在主页或搜索结果页按“h”键获取帮助。"
+msgstr "使用热键进行导航（需要 JavaScript）。在主页或搜索结果页按“h”键获取帮助。"
 
 #: searx/templates/simple/preferences/image_proxy.html:2
 msgid "Image proxy"
@@ -1057,13 +1107,13 @@ msgstr "内容过滤"
 
 #: searx/templates/simple/preferences/search_on_category_select.html:2
 msgid "Search on category select"
-msgstr "搜索特定类别"
+msgstr "在选中类别时立即进行搜索"
 
 #: searx/templates/simple/preferences/search_on_category_select.html:14
 msgid ""
 "Perform search immediately if a category selected. Disable to select "
 "multiple categories"
-msgstr ""
+msgstr "当一个类别被指定时，立即执行搜索。禁用以选择多个类别"
 
 #: searx/templates/simple/preferences/theme.html:2
 msgid "Theme"
@@ -1079,7 +1129,7 @@ msgstr "主题样式"
 
 #: searx/templates/simple/preferences/theme.html:31
 msgid "Choose auto to follow your browser settings"
-msgstr "自动（取决于您的浏览器设置）"
+msgstr "选择自动以跟随您的浏览器设置"
 
 #: searx/templates/simple/preferences/tokens.html:2
 msgid "Engine tokens"
@@ -1102,10 +1152,13 @@ msgid "repo"
 msgstr "软件仓库"
 
 #: searx/templates/simple/result_templates/default.html:6
+#: searx/templates/simple/result_templates/files.html:8
+#: searx/templates/simple/result_templates/files.html:11
 msgid "show media"
 msgstr "显示媒体"
 
 #: searx/templates/simple/result_templates/default.html:6
+#: searx/templates/simple/result_templates/files.html:8
 msgid "hide media"
 msgstr "隐藏媒体"
 
@@ -1114,15 +1167,59 @@ msgstr "隐藏媒体"
 msgid "This site did not provide any description."
 msgstr "此站点未提供任何描述。"
 
-#: searx/templates/simple/result_templates/images.html:19
+#: searx/templates/simple/result_templates/files.html:38
+#: searx/templates/simple/result_templates/images.html:22
+#: searx/templates/simple/result_templates/torrent.html:11
+msgid "Filesize"
+msgstr "文件大小"
+
+#: searx/templates/simple/result_templates/files.html:39
+#: searx/templates/simple/result_templates/torrent.html:12
+msgid "Bytes"
+msgstr "字节"
+
+#: searx/templates/simple/result_templates/files.html:40
+#: searx/templates/simple/result_templates/torrent.html:13
+msgid "kiB"
+msgstr "kiB"
+
+#: searx/templates/simple/result_templates/files.html:41
+#: searx/templates/simple/result_templates/torrent.html:14
+msgid "MiB"
+msgstr "MiB"
+
+#: searx/templates/simple/result_templates/files.html:42
+#: searx/templates/simple/result_templates/torrent.html:15
+msgid "GiB"
+msgstr "GiB"
+
+#: searx/templates/simple/result_templates/files.html:43
+#: searx/templates/simple/result_templates/torrent.html:16
+msgid "TiB"
+msgstr "TiB"
+
+#: searx/templates/simple/result_templates/files.html:47
+msgid "Date"
+msgstr "日期"
+
+#: searx/templates/simple/result_templates/files.html:49
+#: searx/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "输入"
+
+#: searx/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr ""
+
+#: searx/templates/simple/result_templates/images.html:21
 msgid "Format"
 msgstr "格式"
 
-#: searx/templates/simple/result_templates/images.html:21
+#: searx/templates/simple/result_templates/images.html:24
 msgid "Engine"
 msgstr "引擎"
 
-#: searx/templates/simple/result_templates/images.html:22
+#: searx/templates/simple/result_templates/images.html:25
 msgid "View source"
 msgstr "查看来源"
 
@@ -1137,6 +1234,39 @@ msgstr "显示地图"
 #: searx/templates/simple/result_templates/map.html:43
 msgid "hide map"
 msgstr "隐藏地图"
+
+#: searx/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:30
+#: searx/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "标签"
+
+#: searx/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr ""
 
 #: searx/templates/simple/result_templates/paper.html:5
 msgid "Published date"
@@ -1153,14 +1283,6 @@ msgstr "编者"
 #: searx/templates/simple/result_templates/paper.html:23
 msgid "Publisher"
 msgstr "出版者"
-
-#: searx/templates/simple/result_templates/paper.html:24
-msgid "Type"
-msgstr "输入"
-
-#: searx/templates/simple/result_templates/paper.html:25
-msgid "Tags"
-msgstr "标签"
 
 #: searx/templates/simple/result_templates/paper.html:26
 msgid "DOI"
@@ -1192,35 +1314,11 @@ msgstr "种子文件"
 
 #: searx/templates/simple/result_templates/torrent.html:9
 msgid "Seeder"
-msgstr "播种者"
+msgstr "做种用户"
 
 #: searx/templates/simple/result_templates/torrent.html:9
 msgid "Leecher"
-msgstr "接收者"
-
-#: searx/templates/simple/result_templates/torrent.html:11
-msgid "Filesize"
-msgstr "文件大小"
-
-#: searx/templates/simple/result_templates/torrent.html:12
-msgid "Bytes"
-msgstr "字节"
-
-#: searx/templates/simple/result_templates/torrent.html:13
-msgid "kiB"
-msgstr "kB"
-
-#: searx/templates/simple/result_templates/torrent.html:14
-msgid "MiB"
-msgstr "MB"
-
-#: searx/templates/simple/result_templates/torrent.html:15
-msgid "GiB"
-msgstr "GB"
-
-#: searx/templates/simple/result_templates/torrent.html:16
-msgid "TiB"
-msgstr "TB"
+msgstr "下载用户"
 
 #: searx/templates/simple/result_templates/torrent.html:20
 msgid "Number of Files"

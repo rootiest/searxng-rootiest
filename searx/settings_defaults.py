@@ -151,6 +151,7 @@ SCHEMA = {
         'docs_url': SettingsValue(str, 'https://docs.searxng.org'),
         'public_instances': SettingsValue((False, str), 'https://searx.space'),
         'wiki_url': SettingsValue(str, 'https://github.com/searxng/searxng/wiki'),
+        'custom': SettingsValue(dict, {'links': {}}),
     },
     'search': {
         'safe_search': SettingsValue((0, 1, 2), 0),
@@ -169,6 +170,7 @@ SCHEMA = {
             'recaptcha_SearxEngineCaptcha': SettingsValue(numbers.Real, 604800),
         },
         'formats': SettingsValue(list, OUTPUT_FORMATS),
+        'max_page': SettingsValue(int, 0),
     },
     'server': {
         'port': SettingsValue((int, str), 8888, 'SEARXNG_PORT'),

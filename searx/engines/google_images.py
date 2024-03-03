@@ -47,6 +47,7 @@ about = {
 # engine dependent config
 categories = ['images', 'web']
 paging = True
+max_page = 50
 time_range_support = True
 safesearch = True
 send_accept_language_header = True
@@ -102,7 +103,7 @@ def response(resp):
             'title': item["result"]["page_title"],
             'content': item["text_in_grid"]["snippet"],
             'source': item["result"]["site_title"],
-            'img_format': f'{item["original_image"]["width"]} x {item["original_image"]["height"]}',
+            'resolution': f'{item["original_image"]["width"]} x {item["original_image"]["height"]}',
             'img_src': item["original_image"]["url"],
             'thumbnail_src': item["thumbnail"]["url"],
             'template': 'images.html',

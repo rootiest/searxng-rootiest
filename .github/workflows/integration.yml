@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-20.04]
-        python-version:  ["3.8", "3.9", "3.10", "3.11"]
+        python-version:  ["3.8", "3.9", "3.10", "3.11", "3.12"]
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -163,7 +163,6 @@ jobs:
     - name: Update transations
       id: update
       run: |
-        git restore utils/brand.env
         make V=1 weblate.push.translations
 
   dockers:

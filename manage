@@ -41,7 +41,7 @@ PATH="${REPO_ROOT}/node_modules/.bin:${PATH}"
 
 PYOBJECTS="searx"
 PY_SETUP_EXTRAS='[test]'
-GECKODRIVER_VERSION="v0.33.0"
+GECKODRIVER_VERSION="v0.34.0"
 # SPHINXOPTS=
 BLACK_OPTIONS=("--target-version" "py311" "--line-length" "120" "--skip-string-normalization")
 BLACK_TARGETS=("--exclude" "(searx/static|searx/languages.py)" "--include" 'searxng.msg|\.pyi?$' "searx" "searxng_extra" "tests")
@@ -83,8 +83,6 @@ PYLINT_OPTIONS="-m pylint -j 0 --rcfile .pylintrc"
 help() {
     nvm.help
     cat <<EOF
-buildenv:
-  rebuild ./utils/brand.env
 webapp.:
   run       : run developer instance
 docs.:
@@ -111,8 +109,6 @@ pyenv.:
   uninstall : uninstall developer installation
   cmd ...   : run command ... in virtualenv
   OK        : test if virtualenv is OK
-pypi.upload:
-  Upload python packages to PyPi (to test use pypi.upload.test)
 format.:
   python    : format Python code source using black
 pygments.:
@@ -153,29 +149,6 @@ webapp.run() {
         xdg-open http://127.0.0.1:8888/
     )&
     SEARXNG_DEBUG=1 pyenv.cmd python -m searx.webapp
-}
-
-buildenv() {
-
-    # settings file from repository's working tree are used by default
-    SEARXNG_SETTINGS_PATH="${REPO_ROOT}/searx/settings.yml"
-
-    if [ -f /etc/searx/settings.yml ]; then
-        err_msg "settings.yml in /etc/searx/ is deprecated, move file to folder /etc/searxng/"
-    fi
-
-    if [ -r '/etc/searxng/settings.yml' ]; then
-        if ask_yn "should settings read from: /etc/searxng/settings.yml"; then
-            SEARXNG_SETTINGS_PATH='/etc/searxng/settings.yml'
-        fi
-    fi
-    export SEARXNG_SETTINGS_PATH
-    (
-        set -e
-        SEARXNG_DEBUG=1 pyenv.cmd python utils/build_env.py 2>&1 \
-            | prefix_stdout "${_Blue}BUILDENV${_creset}  "
-    )
-    return "${PIPESTATUS[0]}"
 }
 
 docker.push() {
@@ -345,7 +318,6 @@ pyenv.install() {
         pyenv
         build_msg PYENV "[install] pip install -e 'searx${PY_SETUP_EXTRAS}'"
         "${PY_ENV_BIN}/python" -m pip install -e ".${PY_SETUP_EXTRAS}"
-        buildenv
     )
     local exit_val=$?
     if [ ! $exit_val -eq 0 ]; then
@@ -358,19 +330,6 @@ pyenv.uninstall() {
     pyenv.cmd python setup.py develop --uninstall 2>&1 \
         | prefix_stdout "${_Blue}PYENV     ${_creset}[pyenv.uninstall] "
 
-}
-
-pypi.upload() {
-    py.clean
-    py.build
-    # https://github.com/pypa/twine
-    pyenv.cmd twine upload "${PYDIST}"/*
-}
-
-pypi.upload.test() {
-    py.clean
-    py.build
-    pyenv.cmd twine upload -r testpypi "${PYDIST}"/*
 }
 
 format.python() {
